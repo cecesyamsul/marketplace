@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - BA Shopp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="BA Logo">
+                <span class="logo-text">BA</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari produk...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <a href="#"><i class="fas fa-user"></i> Akun</a>
+                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Keranjang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Detail Produk -->
+    <main class="main-container">
+        <section class="product-detail">
+            <div class="product-detail-container">
+                <div class="product-image">
+                    <img src="assets/images/1.webp" alt="Smartphone XYZ">
+                </div>
+                <div class="product-info">
+                    <h1 class="product-title">Smartphone XYZ 128GB RAM 6GB Kamera 48MP</h1>
+                    <div class="product-rating">
+                        <span class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="review-count">(127 Ulasan)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="original-price">Rp3.999.000</span>
+                        <span class="discount">30%</span>
+                        <div class="final-price">Rp2.799.000</div>
+                    </div>
+                    <div class="product-stock">
+                        <p>Stok tersedia: <strong>52</strong> unit</p>
+                    </div>
+                    <div class="product-description">
+                        <p>Smartphone XYZ hadir dengan layar 6.5" Full HD+, kamera 48MP, RAM 6GB, dan penyimpanan internal 128GB. Cocok untuk gaming, multitasking, dan fotografi.</p>
+                    </div>
+                    <div class="product-actions">
+                        <label for="qty">Jumlah:</label>
+                        <input type="number" id="qty" value="1" min="1" max="10">
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Tambah ke Keranjang</button>
+                        <button class="btn-buy-now"><i class="fas fa-bolt"></i> Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produk Terkait -->
+        <section class="related-products">
+            <div class="section-header">
+                <h2><i class="fas fa-tags"></i> Produk Terkait</h2>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="2.jpg" alt="Produk Terkait" class="product-image">
+                    <div class="product-name">Headphone Bluetooth Noise Cancelling</div>
+                    <div class="product-price">Rp750.000</div>
+                </div>
+                <div class="product-card">
+                    <img src="3.jpg" alt="Produk Terkait" class="product-image">
+                    <div class="product-name">Smart Watch Fitness Tracker</div>
+                    <div class="product-price">Rp539.000</div>
+                </div>
+                <div class="product-card">
+                    <img src="6.jpg" alt="Produk Terkait" class="product-image">
+                    <div class="product-name">Sepatu Lari Premium</div>
+                    <div class="product-price">Rp844.000</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="copyright">
+                    © 2023 BA. Hak Cipta Dilindungi.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

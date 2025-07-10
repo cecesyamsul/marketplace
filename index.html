@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BA Shopp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="BA Logo">
+                <span class="logo-text">BA</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari produk...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <a href="#" onclick="openAuthModal()"><i class="fas fa-user" ></i> Akun</a>
+                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="#" onclick="openCartModal()"><i class="fas fa-shopping-cart"></i> Keranjang</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-menu">
+            <a href="#" class="active">Beranda</a>
+            <a href="#">Produk Baru</a>
+            <a href="#">Terlaris</a>
+            <a href="#">Diskon</a>
+            <a href="#">Elektronik</a>
+            <a href="#">Fashion</a>
+            <a href="#">Kecantikan</a>
+            <a href="#">Rumah Tangga</a>
+            <a href="#">Olahraga</a>
+            <a href="#">Makanan</a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Banner -->
+        <section class="banner">
+            <div class="categories-sidebar">
+                <h3><i class="fas fa-list"></i> Kategori Produk</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-mobile-alt"></i> Handphone & Tablet</a></li>
+                    <li><a href="#"><i class="fas fa-laptop"></i> Laptop & Komputer</a></li>
+                    <li><a href="#"><i class="fas fa-tshirt"></i> Fashion Pria</a></li>
+                    <li><a href="#"><i class="fas fa-female"></i> Fashion Wanita</a></li>
+                    <li><a href="#"><i class="fas fa-home"></i> Rumah Tangga</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Makanan & Minuman</a></li>
+                    <li><a href="#"><i class="fas fa-gamepad"></i> Hobi & Koleksi</a></li>
+                    <li><a href="#"><i class="fas fa-baby"></i> Bayi & Anak</a></li>
+                    <li><a href="#"><i class="fas fa-heartbeat"></i> Kesehatan</a></li>
+                    <li><a href="#"><i class="fas fa-car"></i> Otomotif</a></li>
+                </ul>
+            </div>
+            <div class="main-banner">
+                <img src="assets/images/1600w-qEn1ZwoszP0.webp" alt="Banner Promo">
+            </div>
+        </section>
+        
+        <!-- Flash Sale -->
+        <section class="flash-sale">
+            <div class="section-header">
+                <h2><i class="fas fa-bolt"></i> Flash Sale</h2>
+                <div class="countdown">12:34:56</div>
+                <a href="#" class="see-all">Lihat Semua <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="assets/images/1.webp" alt="Product" class="product-image">
+                    <div class="product-name">Smartphone XYZ 128GB RAM 6GB Kamera 48MP</div>
+                    <div class="product-price">
+                        <span class="product-original-price">Rp3.999.000</span>
+                        <span class="product-discount">30%</span><br>
+                        Rp2.799.000
+                    </div>
+                    <div class="product-sold">Terjual 1.2rb+</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/2.jpg" alt="Product" class="product-image">
+                    <div class="product-name">Headphone Bluetooth Noise Cancelling</div>
+                    <div class="product-price">
+                        <span class="product-original-price">Rp1.500.000</span>
+                        <span class="product-discount">50%</span><br>
+                        Rp750.000
+                    </div>
+                    <div class="product-sold">Terjual 856+</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/3.jpg" alt="Product" class="product-image">
+                    <div class="product-name">Smart Watch Fitness Tracker</div>
+                    <div class="product-price">
+                        <span class="product-original-price">Rp899.000</span>
+                        <span class="product-discount">40%</span><br>
+                        Rp539.000
+                    </div>
+                    <div class="product-sold">Terjual 2.3rb+</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/5.jpg" alt="Product" class="product-image">
+                    <div class="product-name">Kamera Mirrorless 24MP dengan Lensa Kit</div>
+                    <div class="product-price">
+                        <span class="product-original-price">Rp7.999.000</span>
+                        <span class="product-discount">25%</span><br>
+                        Rp5.999.000
+                    </div>
+                    <div class="product-sold">Terjual 421+</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/6.jpg" alt="Product" class="product-image">
+                    <div class="product-name">Sepatu Lari Premium dengan Bantalan Udara</div>
+                    <div class="product-price">
+                        <span class="product-original-price">Rp1.299.000</span>
+                        <span class="product-discount">35%</span><br>
+                        Rp844.000
+                    </div>
+                    <div class="product-sold">Terjual 1.5rb+</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Categories -->
+        <section class="categories-section">
+            <div class="section-header">
+                <h2><i class="fas fa-th-large"></i> Kategori Populer</h2>
+                <a href="#" class="see-all">Lihat Semua <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="category-name">Handphone</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="category-name">Laptop</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="category-name">Fashion</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="category-name">Rumah Tangga</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="category-name">Makanan</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="category-name">Hobi</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Recommended Products -->
+        <section class="flash-sale">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Rekomendasi Untuk Anda</h2>
+                <a href="#" class="see-all">Lihat Semua <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="assets/images/7.jpg" alt="Product" class="product-image">
+                    <div class="product-name">Tas Ransel Anti Air Kapasitas Besar</div>
+                    <div class="product-price">Rp349.000</div>
+                    <div class="product-sold">Terjual 3.4rb+</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/8.jpg" alt="Product" class="product-image">
+                    <div class="product-name">Blender Multifungsi 5-in-1</div>
+                    <div class="product-price">Rp499.000</div>
+                    <div class="product-sold">Terjual 2.1rb+</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/9.jpg" alt="Product" class="product-image">
+                    <div class="product-name">Lipstik Matte 24 Jam Tahan Lama</div>
+                    <div class="product-price">Rp129.000</div>
+                    <div class="product-sold">Terjual 8.7rb+</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/1avif.avif" alt="Product" class="product-image">
+                    <div class="product-name">Smart TV 43 Inch 4K UHD</div>
+                    <div class="product-price">Rp4.999.000</div>
+                    <div class="product-sold">Terjual 567+</div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/11.jpg" alt="Product" class="product-image">
+                    <div class="product-name">Koper Travel Ukuran Sedang</div>
+                    <div class="product-price">Rp799.000</div>
+                    <div class="product-sold">Terjual 1.9rb+</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Modal Detail Produk -->
+<!-- Modal Detail Produk -->
+<div class="modal" id="productModal" style="display: none;">
+  <div class="modal-overlay" onclick="closeModal()"></div>
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-body">
+      <div class="modal-image-carousel">
+        <div class="carousel-wrapper">
+          <div class="carousel-images" id="carouselImages">
+            
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button onclick="prevImage()">&#10094;</button>
+          <button onclick="nextImage()">&#10095;</button>
+        </div>
+      </div>
+      <div class="modal-info">
+        <h2 id="modalTitle">Nama Produk</h2>
+        <p id="modalPrice">Rp0</p>
+        <p id="modalSold">Terjual 0+</p>
+        <div class="quantity-control">
+             <img id="modalImage" src="" alt="Product" style="max-width: 10px;" />
+          <button onclick="decreaseQty()">-</button>
+          <input type="number" id="qtyInput" value="1" min="1">
+          <button onclick="increaseQty()">+</button>
+        </div>
+        <button class="add-to-cart-btn" onclick="addToCart()"> <i class="fas fa-cart-plus"></i>  Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal Sign In / Sign Up -->
+<!-- Modal Auth -->
+<div class="modal" id="authModal" style="display: none;">
+  <div class="modal-overlay" onclick="closeAuthModal()"></div>
+  <div class="auth-box">
+    <button class="auth-close" onclick="closeAuthModal()">&times;</button>
+    <div class="auth-tabs">
+      <button id="signInTab" class="active" onclick="showSignIn()">Masuk</button>
+      <button id="signUpTab" onclick="showSignUp()">Daftar</button>
+    </div>
+    <div class="auth-form" id="authContent">
+      <!-- Konten Sign In/Up dimuat via JS -->
+    </div>
+  </div>
+</div>
+
+<!-- Modal Keranjang Stylish -->
+<div class="modal" id="cartModal" style="display: none;">
+  <div class="modal-overlay" onclick="closeCartModal()"></div>
+  <div class="modal-box cart-modal-box animate-pop">
+    <button class="modal-close" onclick="closeCartModal()"><i class="fas fa-times"></i></button>
+    <h2 class="modal-title"><i class="fas fa-shopping-basket"></i> Keranjang Anda</h2>
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <strong id="cartTotal">Rp0</strong>
+      </div>
+      <button class="fab-checkout" onclick="checkoutCart()">
+        <i class="fas fa-credit-card"></i> Checkout
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>Bantuan</h3>
+                    <ul>
+                        <li><a href="#">Pusat Bantuan</a></li>
+                        <li><a href="#">Cara Belanja</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Pembayaran</a></li>
+                        <li><a href="#">Pengembalian</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Tentang BA</h3>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Jual di BA</h3>
+                    <ul>
+                        <li><a href="#">Mulai Berjualan</a></li>
+                        <li><a href="#">Program Seller</a></li>
+                        <li><a href="#">Pusat Edukasi Seller</a></li>
+                        <li><a href="#">BA Seller Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Hubungi Kami</h3>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Email Kami</a></li>
+                        <li><a href="#">Lokasi Kantor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Download App</h3>
+                    <ul>
+                        <li><a href="#"><img src="assets/images/gp.png" alt="Google Play" style="margin-bottom: 10px; max-width: 20px;"></a></li>
+                        <li><a href="#"><img src="assets/images/Apps.png" alt="App Store" style="max-width: 20px;"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" style="max-width: 50px;" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" style="max-width: 50px;" alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" height="25">
+<img src="assets/images/bca.jpg" alt="BCA" height="25">
+<img src="https://static.cdnlogo.com/logos/b/98/bank-mandiri.svg" alt="Mandiri" height="25">
+
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="copyright">
+                    © 2023 BA. Hak Cipta Dilindungi.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="toast" class="toast">Produk ditambahkan ke keranjang!</div>
+</body>
+<script>
+ let currentImageIndex = 0;
+let autoSlideInterval;
+let touchStartX = 0;
+
+function openModal(image, title, price, sold, images = []) {
+        document.getElementById('modalImage').src = image;
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalPrice').textContent = price;
+  document.getElementById('modalSold').textContent = sold;
+  document.getElementById('qtyInput').value = 1;
+
+  const carousel = document.getElementById('carouselImages');
+  carousel.innerHTML = '';
+  (images.length ? images : [image]).forEach(src => {
+    const img = document.createElement('img');
+    img.src = src;
+    carousel.appendChild(img);
+  });
+
+  currentImageIndex = 0;
+  updateCarousel();
+  startAutoSlide();
+
+  const btn = document.querySelector('.add-to-cart-btn');
+  btn.dataset.title = title;
+  btn.dataset.price = price;
+  btn.dataset.image = image;
+
+  document.getElementById('productModal').style.display = 'flex';
+}
+
+function updateCarousel() {
+  const carousel = document.getElementById('carouselImages');
+  const imgs = carousel.querySelectorAll('img');
+
+  imgs.forEach((img, i) => {
+    img.classList.remove('active');
+    if (i === currentImageIndex) img.classList.add('active');
+  });
+
+  const offset = -currentImageIndex * 100;
+  carousel.style.transform = `translateX(${offset}%)`;
+}
+
+function nextImage() {
+  const carousel = document.getElementById('carouselImages');
+  const total = carousel.children.length;
+  currentImageIndex = (currentImageIndex + 1) % total;
+  updateCarousel();
+}
+
+function prevImage() {
+  const carousel = document.getElementById('carouselImages');
+  const total = carousel.children.length;
+  currentImageIndex = (currentImageIndex - 1 + total) % total;
+  updateCarousel();
+}
+
+function startAutoSlide() {
+  stopAutoSlide();
+  autoSlideInterval = setInterval(nextImage, 5000); // 5 detik
+}
+
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+// Optional: Hentikan slide saat modal ditutup
+function closeModal() {
+  document.getElementById('productModal').style.display = 'none';
+  stopAutoSlide();
+}
+
+// Touch events for swipe
+const carouselWrapper = document.querySelector('.carousel-wrapper');
+carouselWrapper.addEventListener('touchstart', e => {
+  touchStartX = e.touches[0].clientX;
+});
+
+carouselWrapper.addEventListener('touchend', e => {
+  const touchEndX = e.changedTouches[0].clientX;
+  const diff = touchEndX - touchStartX;
+  if (Math.abs(diff) > 50) {
+    if (diff > 0) prevImage();
+    else nextImage();
+  }
+  startAutoSlide(); // restart slide
+});
+
+  function closeModal() {
+    document.getElementById('productModal').style.display = 'none';
+  }
+
+  function increaseQty() {
+    const input = document.getElementById('qtyInput');
+    input.value = parseInt(input.value) + 1;
+  }
+
+  function decreaseQty() {
+    const input = document.getElementById('qtyInput');
+    if (parseInt(input.value) > 1) input.value = parseInt(input.value) - 1;
+  }
+
+
+  document.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('click', function () {
+      const image = this.querySelector('.product-image').src;
+      const title = this.querySelector('.product-name').textContent;
+      const price = this.querySelector('.product-price')?.innerText || "Rp0";
+      const sold = this.querySelector('.product-sold')?.innerText || "";
+
+      openModal(image, title, price, sold);
+    });
+  });
+  function showToast(message) {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.classList.add('show');
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3000);
+}
+
+function openAuthModal() {
+  document.getElementById("authModal").style.display = "flex";
+  showSignIn();
+}
+
+function closeAuthModal() {
+  document.getElementById("authModal").style.display = "none";
+}
+
+function showSignIn() {
+  document.getElementById("signInTab").classList.add("active");
+  document.getElementById("signUpTab").classList.remove("active");
+  document.getElementById("authContent").innerHTML = `
+    <form onsubmit="event.preventDefault(); alert('Login berhasil!')">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Kata Sandi" required>
+      <button type="submit">Masuk</button>
+      <div class="social-login">
+        <p>Atau masuk dengan</p>
+        <div class="social-icons">
+          <button class="social-btn google"><i class="fab fa-google"></i></button>
+          <button class="social-btn facebook"><i class="fab fa-facebook-f"></i></button>
+          <button class="social-btn github"><i class="fab fa-github"></i></button>
+        </div>
+      </div>
+      <small>Belum punya akun? Klik Daftar di atas</small>
+    </form>
+  `;
+}
+
+function showSignUp() {
+  document.getElementById("signUpTab").classList.add("active");
+  document.getElementById("signInTab").classList.remove("active");
+  document.getElementById("authContent").innerHTML = `
+    <form onsubmit="event.preventDefault(); alert('Pendaftaran berhasil!')">
+      <input type="text" placeholder="Nama Lengkap" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Kata Sandi" required>
+      <button type="submit">Daftar</button>
+      <div class="social-login">
+        <p>Atau daftar dengan</p>
+        <div class="social-icons">
+          <button class="social-btn google"><i class="fab fa-google"></i></button>
+          <button class="social-btn facebook"><i class="fab fa-facebook-f"></i></button>
+          <button class="social-btn github"><i class="fab fa-github"></i></button>
+        </div>
+      </div>
+      <small>Sudah punya akun? Klik Masuk di atas</small>
+    </form>
+  `;
+}
+
+
+let cart = [];
+
+function addToCart() {
+  const title = document.querySelector('.add-to-cart-btn').dataset.title;
+  const priceText = document.querySelector('.add-to-cart-btn').dataset.price.replace(/[Rp.,]/g, '');
+  const qty = parseInt(document.getElementById('qtyInput').value);
+  const price = parseInt(priceText);
+   const images = document.getElementById('modalImage').src;
+   const assetsIndex = images.indexOf("/assets/");
+   const image = images.substring(assetsIndex + 1); 
+  
+   const existing = cart.find(item => item.title === title);
+  if (existing) {
+    existing.qty += qty;
+  } else {
+    cart.push({ title, price, qty,image });
+  }
+
+  showToast(`"${title}" (${qty} item) ditambahkan ke keranjang!`);
+  closeModal();
+//   updateCartIcon();
+}
+
+function openCartModal() {
+  const container = document.getElementById('cartItems');
+  container.innerHTML = '';
+  let total = 0;
+    
+  if (cart.length === 0) {
+    container.innerHTML = '<p>Keranjang Anda kosong.</p>';
+  } else {
+    cart.forEach(item => {
+      container.innerHTML += `
+        <div class="cart-item">
+          <img src="${item.image}" alt="${item.title}">
+          <div class="cart-item-info">
+            <div class="cart-item-title">${item.title}</div>
+            <div class="cart-item-price">Rp${(item.price).toLocaleString()} × ${item.qty}</div>
+          </div>
+        </div>
+      `;
+      total += item.price * item.qty;
+    });
+  }
+
+  document.getElementById('cartTotal').textContent = `Rp${total.toLocaleString()}`;
+  document.getElementById('cartModal').style.display = 'flex';
+}
+
+
+function closeCartModal() {
+  document.getElementById('cartModal').style.display = 'none';
+}
+
+function checkoutCart() {
+  alert("Checkout berhasil. (Mock feature)");
+}
+
+
+</script>
+
+</html>
